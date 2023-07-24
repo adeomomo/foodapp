@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'food-app';
+  loadedFeature = 'recipe' ;
+
+  onNavigate(feature: string) {
+    console.log('component emitted ' + feature);
+    this.loadedFeature = feature;
+  }
 }
